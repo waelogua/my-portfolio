@@ -64,8 +64,11 @@ body{
   .bar.intermediate::before{
     width: calc(60% - 10px);
   }
+  .bar.upper-intermediate::before{
+  width: calc(80% - 10px);
+  }
   .bar.advanced::before{
-    width: calc(80% - 10px);
+    width: calc(85% - 10px);
   }
   .bar.expert::before{
     width: calc(100% - 10px);

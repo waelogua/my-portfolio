@@ -38,7 +38,7 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
+        <div class="container d-flex align-items-center flex-column" data-toggle="modal" data-target="#homefolioModal1">
             <!-- Masthead Avatar Image-->
             <img src="assets/img/portfolio/wael.jpg" alt="100%" class="avatar">
             <h1 class="animate__animated animate__backInUp">Hello 👋 </h1>
@@ -61,10 +61,10 @@
             <!-- Portfolio Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 ">Portfolio</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom ">
-                <div class="divider-custom-line "></div>
-                <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
-                <div class="divider-custom-line "></div>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star "></i></div>
+                <div class="divider-custom-line"></div>
             </div>
             <!-- Portfolio Grid Items-->
             <div class="row ">
@@ -74,9 +74,10 @@
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/movie photo.gif" alt=" " />
+                        <img class="img-fluid" src="assets/img/portfolio/movie photo.gif" alt=""/>
                     </div>
                 </div>
+                
                 <!-- Portfolio Item 2-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
@@ -113,15 +114,16 @@
             </div>
             <!-- About Section Content-->
             <div class="container ">
-                <div class="bar learning " data-skill="Angular4+ "></div>
-                <div class="bar back basic " data-skill="Jquery "></div>
-                <div class="bar back intermediate " data-skill="JavaScript "></div>
-                <div class="bar front advanced " data-skill="CSS3 "></div>
-                <div class="bar front expert " data-skill="HTML5 "></div>
+                <div class="bar learning" data-skill="Angular4+"></div>
+                <div class="bar back basic" data-skill="Jquery"></div>
+                <div class="bar back intermediate" data-skill="JavaScript"></div>
+                <div class="bar front upper-intermediate" data-skill="Bootstrap 4"></div>
+                <div class="bar front advanced" data-skill="CSS3"></div>
+                <div class="bar front expert " data-skill="HTML5"></div>
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light " href="cv wael-converted.pdf" download=""><i></i>Download CV</a>
+                <a class="btn btn-xl btn-outline-dark " href="cv wael-converted.pdf" download=""><i></i>Download CV</a>
             </div>
         </div>
     </section>
@@ -177,9 +179,9 @@
     <!-- Portfolio Modals-->
     <!-- Portfolio Modal 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl " role="document ">
-            <div class="modal-content ">
-                <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true "><i class="fas fa-times "></i></span>
                     </button>
                 <div class="modal-body text-center">
@@ -194,10 +196,12 @@
                                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
-                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/movie photo.gif " alt=" " />
+                                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/movie photo.gif" alt="" />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">TheMovieOg is a webpage where you can search for any movie's info from old to popular using Rest Api</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                <form method="get" action="http://questionable-comb.surge.sh/">
+                                    <button type="submit" class="btn btn-primary">View Project</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -210,7 +214,7 @@
         <div class="modal-dialog modal-xl " role="document">
             <div class="modal-content ">
                 <button class="close " type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true "><i class="fas fa-times"></i></span>
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
                     </button>
                 <div class="modal-body text-center">
                     <div class="container">
@@ -227,7 +231,9 @@
                                 <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/weather.png" alt=" " />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">TheWeatherReport a simple page display the current location's weather</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                <form method="get" action="">
+                                    <button type="submit" class="btn btn-primary">View Project</button>
+                                </form>
                                 
                             </div>
                         </div>
@@ -258,7 +264,9 @@
                                 <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/currnecy GIF.gif" alt="" />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">ConvertMyMoney is a webpage for converting money currency easy and daily updated</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                <form method="get" action="http://aware-angle.surge.sh/">
+                                    <button type="submit" class="btn btn-primary">View Project</button>
+                                </form>
                             </div>
                         </div>
                     </div>
